@@ -1,0 +1,8 @@
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+
+    print(tuple(integer_list))
+    print(type(integer_list))
+    print(hash(tuple(integer_list)))
+    print(hash(integer_list))
