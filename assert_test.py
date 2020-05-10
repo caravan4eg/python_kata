@@ -10,5 +10,13 @@ def chk_value(iterable, k: int) -> str:
     return sorted(iterable)[k-1]
 
 
-s1 = '54321'
-print(chk_value(s1, 4))
+def main():
+    iterable = '54321'
+    print(chk_value(iterable, 4))
+
+    iterable = 54321
+    print(chk_value(iterable, 4))
+
+
+if __name__ == "__main__":
+    main()
