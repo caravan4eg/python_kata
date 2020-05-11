@@ -17,6 +17,8 @@ def main():
     iterable = 54321
     print(chk_value(iterable, 4))
 
+    assert chk_value(range(10), 3) == 2,
+
 
 if __name__ == "__main__":
     main()
