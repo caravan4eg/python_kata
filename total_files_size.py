@@ -2,7 +2,6 @@
 """
 Count total size of files in dir
 """
-
 import os
 
 
