@@ -17,7 +17,7 @@ The silly panda walked to the chandelie
 """
 
 
-def get_content(file):
+def get_content_from(file):
     # Get content from file
     with open(file, 'r') as mad_libs_txt:
         content = mad_libs_txt.read()
@@ -37,7 +37,7 @@ def change(content):
     return content
 
 
-def write_content(file, new_content):
+def write_content_to(file, new_content):
     # Write new content to file
     with open(file, 'a') as mad_libs_txt:
         mad_libs_txt.write(new_content)
@@ -46,9 +46,9 @@ def write_content(file, new_content):
 def main():
     file = '/home/alex/dev/python_kata/automate_the_boring_stuff_with_python/mad_libs.txt'
 
-    content = get_content(file)
+    content = get_content_from(file)
     new_content = change(content)
-    write_content(file, new_content)
+    write_content_to(file, new_content)
 
 
 if __name__ == "__main__":
